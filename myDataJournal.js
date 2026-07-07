@@ -61,3 +61,15 @@ const weekData = [
     focusLevel: 5
   }
 ];
+// Returns the day with the highest screen time
+function findHighestScreenTime() {
+  let highestDay = weekData[0];
+
+  for (let entry of weekData) {
+    if (entry.screenTime > highestDay.screenTime) {
+      highestDay = entry;
+    }
+  }
+
+  return highestDay;
+}
