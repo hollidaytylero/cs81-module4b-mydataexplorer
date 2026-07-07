@@ -1,0 +1,4 @@
+Were your predictions right? Yes, they were accurate. This was not surprising to me because I am aware of my patterns and get a regular dose of sleep and rest each night.
+What surprised you? I was surprised at how easy this assignment was. I am getting better at navigating between Github and VS. I understand how to stage and commit changes and I am starting to pick up on the function language. 
+What was tricky or rewarding? Both. Tricky because I still need to look up function concepts and review. Rewarding, because I did this much faster than I thought I would. I am feeling more confident.
+How did using your own data change things? It made this assignment make sense in context. I know no how to apply this to real world things and how companies might use Java to automate their data collection, etc.
