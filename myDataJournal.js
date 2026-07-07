@@ -1,4 +1,4 @@
-OMMENT WITH GITHUB URL: https://github.com/hollidaytylero/cs81-module4b-mydataexplorer
+COMMENT WITH GITHUB URL: https://github.com/hollidaytylero/cs81-module4b-mydataexplorer
 
 // Weekly personal data journal
 // Predictions:
