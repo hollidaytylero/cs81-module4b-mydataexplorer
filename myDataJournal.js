@@ -1,3 +1,5 @@
+OMMENT WITH GITHUB URL: https://github.com/hollidaytylero/cs81-module4b-mydataexplorer
+
 // Weekly personal data journal
 // Predictions:
 // Which day had the most screen time? Weekends, Saturday and Sunday
@@ -83,3 +85,50 @@ function averageSleep() {
 
   return totalSleep / weekData.length;
 }
+// Returns the mood that appears most often
+function mostFrequentMood() {
+  let moodCounts = {};
+
+  for (let entry of weekData) {
+    if (moodCounts[entry.mood]) {
+      moodCounts[entry.mood]++;
+    } else {
+      moodCounts[entry.mood] = 1;
+    }
+  }
+
+  let mostCommonMood = "";
+  let highestCount = 0;
+
+  for (let mood in moodCounts) {
+    if (moodCounts[mood] > highestCount) {
+      highestCount = moodCounts[mood];
+      mostCommonMood = mood;
+    }
+  }
+
+  return mostCommonMood;
+}
+// Calculates average focus level for each caffeine amount
+function correlateCaffeineToFocus() {
+  let caffeineData = {};
+
+  for (let entry of weekData) {
+    if (!caffeineData[entry.caffeineIntake]) {
+      caffeineData[entry.caffeineIntake] = {
+        totalFocus: 0,
+        count: 0
+      };
+    }
+
+    caffeineData[entry.caffeineIntake].totalFocus += entry.focusLevel;
+    caffeineData[entry.caffeineIntake].count++;
+  }
+
+  for (let cups in caffeineData) {
+    let averageFocus =
+      caffeineData[cups].totalFocus / caffeineData[cups].count;
+
+    console.log(
+      `${cups} cup(s) of caffeine: Average Focus = ${averageFocus.toFixed(2)}`
+    );
