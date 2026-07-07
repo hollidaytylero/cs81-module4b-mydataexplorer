@@ -73,3 +73,13 @@ function findHighestScreenTime() {
 
   return highestDay;
 }
+// Returns the average hours of sleep for the week
+function averageSleep() {
+  let totalSleep = 0;
+
+  for (let entry of weekData) {
+    totalSleep += entry.sleepHours;
+  }
+
+  return totalSleep / weekData.length;
+}
